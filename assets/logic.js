@@ -1,6 +1,5 @@
 
 // Initialize Firebase
-
 var firebaseConfig = {
   apiKey: "AIzaSyBk9EXizpKrpnnA32K7Rq0E3PMywildR_A",
   authDomain: "train-schedule-f330f.firebaseapp.com",
@@ -13,13 +12,15 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig); 
 
-var database = firebase.database();
+var database = firebase.database().ref();
   
   // var trainData = firebase.database();
   
   // 2. Populate Firebase Database with initial data (in this case, I did this via Firebase GUI)
   // 3. Button for adding trains
-  $("#add-train-btn").on("click", function() {
+  $(document).ready(function () {
+  $("#add-train-btn").on("click", function(event) {
+    event.preventDefault();
     console.log("click")
   
     // Grabs user input
@@ -57,6 +58,8 @@ var database = firebase.database();
     // Determine when the next train arrives.
     // return false;
   });
+
+})
   
   // 4. Create Firebase event for adding trains to the database and a row in the html when a user adds an entry
   // database.ref().on("child_added", function(childSnapshot, prevChildKey) {
