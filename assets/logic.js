@@ -1,18 +1,18 @@
-
+// var firebase = require("firebase");
 // Initialize Firebase
 var firebaseConfig = {
-  apiKey: "AIzaSyBk9EXizpKrpnnA32K7Rq0E3PMywildR_A",
-  authDomain: "train-schedule-f330f.firebaseapp.com",
-  databaseURL: "https://train-schedule-f330f.firebaseio.com",
-  projectId: "train-schedule-f330f",
-  storageBucket: "train-schedule-f330f.appspot.com",
-  messagingSenderId: "748195058296",
-  appId: "1:748195058296:web:9aae55df3166256b"
-};
+    apiKey: "AIzaSyCcGPqcNTt3Zar160fDU2mF7-FfpApyN4M",
+    authDomain: "train-scheduler-a1746.firebaseapp.com",
+    databaseURL: "https://train-scheduler-a1746.firebaseio.com/",
+    projectId: "train-scheduler-a1746",
+    storageBucket: "train-scheduler-a1746.appspot.com",
+    messagingSenderId: "617801297883",
+    appId: "1:617801297883:web:f6c925846ef1af51"
+  };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig); 
 
-var database = firebase.database().ref();
+var database = firebase.database();
   
   // var trainData = firebase.database();
   
